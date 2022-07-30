@@ -2,19 +2,18 @@ h1{
     text-align: center;
     border: 2px solid maroon;
     padding: 1em;
-    position: sticky;
     top: 10px;
     background-color: white;
 }
 .logo {
     border: 2px solid maroon;
-    position: sticky;
-    top: 10px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    background-color: bisque;
+    margin: 0 auto;
+    width: 60%;
+    z-index: 99;
 }
 .italian {
     color:red;
@@ -22,24 +21,35 @@ h1{
 }
 .recipe {
     box-sizing: border-box;
-    display: inline;
+}
+.image,
+.recipe .subtitle{
+    width: 250px;
 }
 .image {
-    width: 250px;
-    height: auto;
-    padding-bottom: 0.5em;
+    height: 400px;
+    margin-bottom: -4px;
 }
 .recipe .subtitle {
-    width: 250px;
-    position: relative;
+    position:relative;
     text-align: center;
     font-family: cursive;
     color:yellowgreen;
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
 }
 li{
     list-style: none;
+    margin-left: auto;
+    margin-right:auto;
+    border: 2px blueviolet solid;
 }
-* {
-    border: 2px red solid;
+#fill{
+    flex: 1 1 auto;
 }
+#blackout{
+    /* background-color: black; */
+}
+#whiteout{
+    /* background-color: beige; */
+}
+/* box-sizing: border-box; allows for the program to account for height and width as an all-encompassing height and width, as opposed to an addition to the padding and border sizing */
